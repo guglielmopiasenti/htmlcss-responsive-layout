@@ -25,6 +25,25 @@
 }
 
 
+/** Buttons */
+
+.white-btn {
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+
+
+/**General */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
 /** Mobile Version */
 
 @media screen and (min-width: 576px) {
@@ -135,6 +154,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+li {
+    padding: 0 10px;
+}
 
 
 /* First section: presentation */
@@ -143,11 +165,16 @@ header {
     background-color: var(--azure);
     border-radius: 20px;
     margin: 20px;
+    padding: 30px;
 
     /* todo remove */
     height: 400px;
 }
-
+.phone {
+    height: 50%;
+    width: auto;
+    object-fit: contain;
+}
 /* Second section: planning*/
 
 #planning {
