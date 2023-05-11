@@ -16,20 +16,69 @@
     --yellow: #F8C15F;
 }
 
+
+/** UTILITIES */
+
+.flex {
+    display: flex;
+}
+
+
 /** Mobile Version */
 
 @media screen and (min-width: 576px) {
-
+    
+    #navigator ul {
+        display: none;
+    }
 }
 
 /** Tablet Version */
 
 @media screen and (min-width: 768px) {
-
+   
+    #navigator ul {
+        display: none;
+    }
 }
 
 /** Desktop Version */
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
+    
+    #navigator ul {
+        display: flex;
+        gap: 10px;
+    }
+    #navigator i {
+        display: none;
+    }
+    #navigator li {
+        list-style: none;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+}
 
+/** Main CSS */
+
+/* Header */
+
+header {
+    background-color: var(--blue);
+    height: 80px;
+}
+
+#navigator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
 }
