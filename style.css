@@ -5,3 +5,31 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+
+/** CUSTOM PROPERTIES */
+
+:root {
+    --blue: #3D84FD;
+    --azure: #B5DDFF;
+    --purple: #9792E4;
+    --yellow: #F8C15F;
+}
+
+/** Mobile Version */
+
+@media screen and (min-width: 576px) {
+
+}
+
+/** Tablet Version */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/** Desktop Version */
+
+@media screen and (min-width: 1200) {
+
+}
