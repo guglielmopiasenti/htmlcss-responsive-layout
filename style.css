@@ -14,6 +14,7 @@
     --azure: #B5DDFF;
     --purple: #9792E4;
     --yellow: #F8C15F;
+    --charcoal: #333;
 }
 
 
@@ -212,4 +213,11 @@ header {
 }
 h1 {
     color: var(--yellow);
+}
+
+
+/*  footer section */
+
+footer {
+    background-color: var(--charcoal);
 }
