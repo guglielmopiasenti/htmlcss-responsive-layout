@@ -197,3 +197,19 @@ header {
     font-weight: bold;
     border-radius: 25px;
 }
+
+
+/* About us section */
+
+
+
+
+
+/* get started section */
+
+#getstarted {
+    background-color: var(--purple);
+}
+h1 {
+    color: var(--yellow);
+}
