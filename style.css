@@ -37,7 +37,12 @@
         flex-wrap: wrap;
     }
     .presentation-cards {
-        flex-basis: 80%;
+        width: 80%;
+    }
+    .presentation-cards:first-child {
+
+        /* todo remove */
+        height: 800px;
     }
     
 }
@@ -115,7 +120,7 @@ header {
 
     /* todo remove */
     height: 400px;
-    /* flex-basis: 80%; */
+    
 
 }
 .presentation-cards:first-child {
