@@ -31,6 +31,15 @@
     #navigator ul {
         display: none;
     }
+    .card-cont {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .presentation-cards {
+        flex-basis: 80%;
+    }
+    
 }
 
 /** Tablet Version */
@@ -39,6 +48,15 @@
    
     #navigator ul {
         display: none;
+    }
+    .card-cont {
+        flex-direction: row;
+    }
+    .presentation-cards:first-child {
+        flex-basis: calc((100% / 3 - 20px) * 2);
+    }
+    .presentation-cards {
+        flex-basis: calc(100% / 3 - 40px);
     }
 }
 
@@ -65,9 +83,17 @@
 
 /** Main CSS */
 
+body {
+    padding-top: 100px;
+}
+
 /* Header */
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: var(--blue);
     height: 80px;
 }
@@ -82,3 +108,18 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.presentation-cards {
+    background-color: var(--azure);
+    border-radius: 20px;
+    margin: 20px;
+
+    /* todo remove */
+    height: 400px;
+    /* flex-basis: 80%; */
+
+}
+.presentation-cards:first-child {
+    
+    /* todo remove */
+    /* flex-basis: calc((100% / 3 - 20px) * 2); */
+} 
