@@ -73,6 +73,9 @@
     .presentation-cards {
         flex-basis: calc(100% / 3 - 40px);
     }
+    .benefits-col {
+        flex-basis: 50%;
+    }
 }
 
 /** Desktop Version */
@@ -96,6 +99,10 @@
     .planning-cont {
         flex-direction: row;
         align-items: flex-end;
+    }
+    .benefits-col {
+        flex-basis: calc(100% / 3);
+        padding: 10px;
     }
 }
 
@@ -170,4 +177,23 @@ header {
     margin: 20px;
     height: 200px;
     width: 90%;
+}
+
+
+/* Testimonial section */
+
+
+#benefits {
+    background-color: var(--purple);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white ;
+    min-height: 400px;
+    font-size: 48px;
+    font-weight: bold;
+    border-radius: 25px;
 }
