@@ -44,7 +44,14 @@
         /* todo remove */
         height: 800px;
     }
-    
+    .planning-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /** Tablet Version */
@@ -53,6 +60,9 @@
    
     #navigator ul {
         display: none;
+    }
+    .container {
+        max-width: 100%;
     }
     .card-cont {
         flex-direction: row;
@@ -83,7 +93,10 @@
         max-width: 800px;
         margin: 0 auto;
     }
-    
+    .planning-cont {
+        flex-direction: row;
+        align-items: flex-end;
+    }
 }
 
 /** Main CSS */
@@ -113,6 +126,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+
+/* First section: presentation */
+
 .presentation-cards {
     background-color: var(--azure);
     border-radius: 20px;
@@ -120,11 +137,28 @@ header {
 
     /* todo remove */
     height: 400px;
-    
-
 }
-.presentation-cards:first-child {
+
+/* Second section: planning*/
+
+#planning {
+    background-color: var(--purple);
+}
+.col > img {
     
+    margin: 20px;
+    justify-content: center;
+
     /* todo remove */
-    /* flex-basis: calc((100% / 3 - 20px) * 2); */
-} 
+    width: 500px;
+    height: 500px;
+    border: 2px dashed red;
+}
+
+/* todo remove */
+
+.img {
+    width: 500px;
+    height: 500px;
+    border: 2px dashed red;
+}
